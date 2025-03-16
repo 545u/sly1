@@ -38,7 +38,7 @@ options:
   auto_all_sections: [".rodata", ".data", ".bss"]
 
   # Linker script options
-  subalign: 4
+  subalign: 8
 
 segments:
   - [0, databin, elf_header]
@@ -117,7 +117,7 @@ segments:
     #- [0x, asm, P2/dialog]
     - [0x529e0, c, P2/difficulty]
     - [0x53438, c, P2/dl]
-    - [0x5380C, asm, P2/dl_padding] # 4 bytes padding to align dmas
+    # - [0x5380C, asm, P2/dl_padding] # 4 bytes padding to align dmas
     - [0x53810, c, P2/dmas]
     - [0x53E28, asm, P2/dsp]
     #- [0x, asm, P2/dysh]
@@ -127,7 +127,7 @@ segments:
     - [0x5aad0, asm, P2/fader]
     - [0x5aca0, asm, P2/unk_f] # unknown file, falls alphabetically between fader and find
     - [0x5af20, c, P2/find]
-    - [0x5b8ac, asm, P2/find_padding] # 4 bytes padding to align P2/find
+    # - [0x5b8ac, asm, P2/find_padding] # 4 bytes padding to align P2/find
     - [0x5b8b0, c, P2/flash]
     - [0x5bae0, asm, P2/fly]
     - [0x5d188, asm, P2/font]
@@ -175,7 +175,7 @@ segments:
     #- [0x, asm, P2/murray]
     - [0x917e0, asm, P2/path]
     - [0x92e70, c, P2/phasemem]
-    - [0x92ebc, asm, P2/phasemem_padding] # 4 bytes padding to align P2/phasemem
+    # - [0x92ebc, asm, P2/phasemem_padding] # 4 bytes padding to align P2/phasemem
     - [0x92ec0, asm, P2/pipe]
     - [0x93068, asm, P2/pnt]
     - [0x931a8, c, P2/po]
@@ -223,7 +223,7 @@ segments:
     - [0xcefb8, asm, P2/stephide]
     - [0xd24f0, asm, P2/steppipe]
     - [0xd39c8, c, P2/steppower]
-    - [0xd41cc, asm, P2/steppower_padding] # 4 bytes padding to align steprail
+    # - [0xd41cc, asm, P2/steppower_padding] # 4 bytes padding to align steprail
     - [0xd41d0, asm, P2/steprail]
     - [0xd46f0, asm, P2/steprun]
     - [0xd5148, asm, P2/stepside]
@@ -269,7 +269,7 @@ segments:
     #--------------------------------------------------------
     # Libs
     #--------------------------------------------------------
-    - [0xF69C4, asm, sce/libs] # #MARK: libs
+    - [0xF69C0, asm, sce/libs] # #MARK: libs
     #- [0xF76F8, asm, sce/rand]
     #- [0xF7738, asm]
 
@@ -499,4 +499,4 @@ segments:
     # - P2/cnvo
 
   - [0x1A1C70, databin]
-  - [0x1A20D0]
+  - [0x1A20D0] # end
