@@ -19,6 +19,10 @@ D_00211E10 = 0x211E10; // size:0x4
 
 BuildEopids__Fv = 0x109488; // type:func
 
+VU1_InitDma = 0x212110; // size:0x4
+VU1_GlobMpg = 0x212160; // size:0x4
+VU1_GlobMpgEnd = 0x215C50; // size:0x4
+achzUpperize = 0x24E879; // size:0x257
 
 ////////////////////////////////////////////////////////////////
 // Unknown file
