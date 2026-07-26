@@ -1,6 +1,6 @@
 /**
  * @file include/sdk/ee/libmc.h
- * @todo Verify that this is the correct directory and version.
+ * @todo Verify that this is the correct directory.
  */
 #ifndef LIBMC_H
 #define LIBMC_H
